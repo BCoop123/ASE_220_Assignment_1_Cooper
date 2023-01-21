@@ -6,23 +6,24 @@ body {
 	background-color: rgb(77, 77, 77);
 }
 
-#wrapper * {
+#wrapper *:not(.link_class) {
 	display: flexbox;
 	font-family: 'Libre Baskerville', serif;
 	margin: 0;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
 }
 
 header {
 	background-color: #ababab;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 nav {
 	background-color: #e3e3e3;
-	text-align: center;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
 
 nav a {
@@ -35,8 +36,7 @@ nav li, ul{
 }
 
 nav li {
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-right: 2%;
 }
 
 body {
@@ -63,7 +63,6 @@ section p {
 #intro img {
 	width: 25%;
 	height: auto;
-	padding-bottom: 2%;
 }
 
 @media (max-width: 600px) {
