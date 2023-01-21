@@ -12,23 +12,24 @@
 				<a href="#bio">Bio</a>
 				<a href="#skills">Skills</a>
 				<a href="#hobbies">Hobbies</a>
-				<a href="#form">Contact</a>
+				<a href="#contact">Contact</a>
 			</nav>
 		</header>
 		<div id="wrapper">
 			<main>
-				<p></p>
 				<section id="intro">
-					<div>
-						<h2>Intro</h2>
-						<p>
-							I am Brandon Cooper, a Northern Kentucky University student studying Computer Information Technology, seeking internships and working towards a career as a Database Administrator.
-						</p>
-						<img src="assets/img/Personal_Website_Photo.JPG" alt="Image of Brandon Cooper">
+					<div class="section_padding">
+						<div id="intro_text_content">
+							<h2>Intro</h2>
+							<p>
+								I am Brandon Cooper, a Northern Kentucky University student studying Computer Information Technology, seeking internships and working towards a career as a Database Administrator.
+							</p>
 						</div>
+						<img src="assets/img/brandon.jpg" alt="Image of Brandon Cooper">
+					</div>
 				</section>
 				<section id="bio">
-					<div>
+					<div class="section_padding">
 						<h2>Bio</h2>
 						<p>
 							I am a student at Northern Kentucky University pursuing a degree in Computer Information Technology with a focus on Web and Database Administration. 
@@ -43,17 +44,19 @@
 					</div>
 					</section>
 				<section id="skills">
-					<div>
-						<h2>Skills</h2>
-						<p>SQL: Proficient in writing and optimizing SQL queries to extract and manipulate data from databases.</p>
-						<p>Web Server Administration: Experience in configuring and maintaining web servers, including Apache.</p>
-						<p>Database Administration: Knowledge of best practices for managing and securing databases.</p>
-						<img src="assets/img/hiking.jpg" alt="Image of wooded area">
-						<img src="assets/img/controller.jpg" alt="Image of Playstation 5 controller">
+					<div class="section_padding">
+						<div id="skills_text_content">
+							<h2>Skills</h2>
+							<p>SQL: Proficient in writing and optimizing SQL queries to extract and manipulate data from databases.</p>
+							<p>Web Server Administration: Experience in configuring and maintaining web servers, including Apache.</p>
+							<p>Database Administration: Knowledge of best practices for managing and securing databases.</p>
+						</div>
+						<img src="assets/img/sql.png" alt="Image of wooded area">
+						<img src="assets/img/apaches.png" alt="Image of Playstation 5 controller">
 					</div>
 					</section>
 				<section id="hobbies">
-					<div>
+					<div class="section_padding">
 						<h2>Hobbies</h2>
 						<p>
 							My hobbies include hiking, playing console video games, working on 
@@ -65,10 +68,18 @@
 						<img src="assets/img/webdesign.jpg" alt="Image of code on computer screen">
 					</div>
 					</section>
-				<section id="form">
-					<div>
+				<section id="contact">
+					<div class="section_padding">
 						<h2>Contact Form</h2>
-						<p>form here</p>
+						<form>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name">
+							<br>
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email">
+							<br>
+							<button type="submit" style="color: #353941;">Submit</button>
+						</form>
 					</div>
 					</section>
 			</main>
