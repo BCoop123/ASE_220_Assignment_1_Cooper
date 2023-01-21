@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-#wrapper h1, h2, p, li {
+body {
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background-color: rgb(77, 77, 77);
+}
+
+#wrapper * {
 	display: flexbox;
 	font-family: 'Libre Baskerville', serif;
 	margin: 0;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
 
 header {
-	color: #111111;
 	background-color: #ababab;
-	padding: 0.5% 0.5% 0.5% 0.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 nav {
-	background-color: #86d4ef;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
+	background-color: #e3e3e3;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
 }
 
 nav li, ul{
@@ -32,17 +43,44 @@ body {
 	margin: 0;
 }
 
-section {
-	padding: 0.5% 0.5% 2% 0.5%;
+main {
+	background-color: white;
 }
 
-main {
-	background-color: aquamarine;
+section {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+section h2 {
+	padding-bottom: 2%;
+}
+
+section p {
+	padding-bottom: 2%;
+}
+
+#intro img {
+	width: 25%;
+	height: auto;
+	padding-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+	#intro img {
+	  width: 80vw;
+	  height: auto;
+	  margin: 0 auto;
+	}
+}
+
+#skills img, #hobbies img {
+	width: 25%;
+	height: auto;
 }
 
 footer {
-	background-color: red;
+	background-color: #ababab;
 	padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
-a {text-decoration: none;}
