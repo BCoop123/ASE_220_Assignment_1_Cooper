@@ -14,13 +14,11 @@
 }
 
 #wrapper h2 {
-	color: #c386eb;
 	color: #868deb;
 	
 }
 
 header {
-	background-color: #c386eb;
 	background-color: #868deb;
 	color: white;
 	font-family: 'Playfair Display', serif;
@@ -54,6 +52,14 @@ a:link, a:visited {
 
 body {
 	margin: 0;
+}
+
+body p, form {
+	font-size: 16px;
+}
+
+body h2 {
+	font-size: 25px;
 }
 
 main {
@@ -96,7 +102,24 @@ section p {
 }
 
 @media (max-width: 600px) {
+	main {
+		background-color: #261f2d;
+	}
+}
 
+@media (min-width: 600px) and (max-width: 900px) {
+	#intro .section_padding {
+		background-color: #868deb;
+	}
+	#intro h2 {
+		color: #ffffff;
+	}
+}
+
+@media (min-width: 900px) {
+	body footer {
+		background-color: #c386eb;
+	}
 }
 
 #skills_text_content {
@@ -133,7 +156,6 @@ section p {
 footer {
 	display: flexbox;
 	font-family: 'Playfair Display', serif;
-	background-color: #c386eb;
 	background-color: #868deb;
 	color: white;
 	padding-top: 0.5%;
@@ -143,4 +165,3 @@ footer {
 footer p {
 	margin: 0;
 }
-
