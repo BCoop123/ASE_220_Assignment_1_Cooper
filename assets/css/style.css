@@ -1,42 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-	background-color: rgb(77, 77, 77);
 }
 
-#wrapper *:not(.link_class) {
+#wrapper * {
 	display: flexbox;
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Playfair Display', serif;
 	margin: 0;
-	padding-left: 1.5%;
-	padding-right: 1.5%;
+}
+
+#wrapper main {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 header {
 	background-color: #ababab;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	font-family: 'Playfair Display', serif;
+	padding-left: 5.5%;
+	padding-top: 1%;
+	padding-right: 5.5%;
+	padding-bottom: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav {
-	background-color: #e3e3e3;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
+header h1 {
+	font-size: 20px;
+	margin-left: 0;
 }
 
-nav a {
+header nav {
+	margin-left: 0;
+}
+
+header nav a {
 	text-decoration: none;
-}
-
-nav li, ul{
-	display: inline;
-	padding: 0;
-}
-
-nav li {
-	padding-right: 2%;
+	padding-left: 15px;
 }
 
 body {
