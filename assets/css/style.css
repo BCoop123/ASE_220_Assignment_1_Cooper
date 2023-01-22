@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
+body {
+	margin: 0;
+}
+
+body p, form {
+	font-size: 16px;
+}
+
+body h2 {
+	font-size: 25px;
+}
+
 #wrapper * {
 	display: flex;
 	flex-wrap: wrap;
@@ -14,12 +26,12 @@
 }
 
 #wrapper h2 {
-	color: #868deb;
+	color: #c386eb;
 	
 }
 
 header {
-	background-color: #868deb;
+	background-color: #c386eb;
 	color: white;
 	font-family: 'Playfair Display', serif;
 	padding-left: 10%;
@@ -50,18 +62,6 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
-body {
-	margin: 0;
-}
-
-body p, form {
-	font-size: 16px;
-}
-
-body h2 {
-	font-size: 25px;
-}
-
 main {
 	background-color: #26282B;
 }
@@ -76,7 +76,7 @@ section {
 }
 
 section h2 {
-	padding-bottom: 2%;
+	padding-bottom: 6.75px;
 }
 
 section p {
@@ -109,7 +109,7 @@ section p {
 
 @media (min-width: 600px) and (max-width: 900px) {
 	#intro .section_padding {
-		background-color: #868deb;
+		background-color: #c386eb;
 	}
 	#intro h2 {
 		color: #ffffff;
@@ -117,8 +117,14 @@ section p {
 }
 
 @media (min-width: 900px) {
+	body header {
+		background-color: #868deb;
+	}
 	body footer {
-		background-color: #c386eb;
+		background-color: #868deb;
+	}
+	#wrapper h2 {
+		color: #868deb;
 	}
 }
 
@@ -147,21 +153,47 @@ section p {
 
 #contact {
 	padding-bottom: 4%;
+	align-items: center;
 }
 
-#contact h2, label {
-	width: 100%;
+#contact * {
+	align-items: center;
+}
+
+#contact .form_item {
+	padding-left: 20px;
+}
+
+#contact .form_item label {
+	padding-right: 5px;
+}
+
+#contact .form_item input {
+	color: #353941;
 }
 
 footer {
-	display: flexbox;
-	font-family: 'Playfair Display', serif;
-	background-color: #868deb;
+	background-color: #c386eb;
 	color: white;
+	font-family: 'Playfair Display', serif;
+	padding-left: 10%;
 	padding-top: 0.5%;
+	padding-right: 10%;
 	padding-bottom: 0.5%;
+	display: flex;
+	align-items: center;
+}
+
+footer #social_links {
+	min-width: 200px;
+	justify-content: flex-start;
+}
+
+footer a {
+	margin-left: 0;
+	padding-left: 10px;
 }
 
 footer p {
-	margin: 0;
+	margin-left: 0;
 }
